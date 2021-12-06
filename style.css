@@ -1,0 +1,196 @@
+* {
+  margin: 0;
+}
+body {
+  display: grid;
+}
+/* Style the navbar */
+#navbar {
+  overflow: hidden;
+  height: 75px;
+  width: 100%;
+  margin: 0;
+  background-color: #24252a;
+  position: fixed;
+  top: 0;
+  z-index: 100;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#navbar a {
+  color: white;
+  padding: 7px;
+  border-radius: 50px;
+  width: 100%;
+  transition: 0.15s;
+}
+#navbar img {
+  width: 50%;
+}
+#links {
+  width: 100%;
+  margin-top: 10px;
+}
+#links a:hover {
+  background-color: cornflowerblue;
+}
+#container div {
+  text-align: center;
+  padding-top: 10px;
+}
+.beerDiv {
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 10px;
+}
+#carouselExampleControls {
+  width: 100%;
+  height: 40vh;
+  background-color: #857ebb;
+  top: 75px;
+}
+#carouselExampleControls div {
+  width: 100%;
+  height: 100%;
+}
+#carouselExampleControls img {
+  width: 100%;
+}
+#beer-cards {
+  position: relative;
+  top: 9vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  width: 75%;
+  height: auto;
+  margin: auto;
+}
+.beer-card {
+  transition: 200ms transform ease-in-out;
+  width: 100%;
+  max-width: 100%;
+  max-height: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 10;
+}
+.beer-card:hover {
+  transform: scale(1.025);
+}
+#container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+h4 {
+  font-size: 16px;
+  text-align: left;
+  padding-left: 10px;
+}
+#about-us {
+  padding: 10px;
+  position: relative;
+  bottom: -10vh;
+}
+
+.btn,
+.btn-primary,
+.btn:hover,
+.btn-primary:hover {
+  background-color: rgba(0, 0, 0, 0);
+  border: 0px;
+  padding: 0;
+}
+.modal-button-custom,
+.modal-button-custom:hover {
+  background-color: cornflowerblue;
+  padding: 5px;
+}
+.modal-img {
+  width: 100%;
+  margin-top: 10px;
+}
+
+#verification {
+  width: 25%;
+  height: 150px;
+  border: 1px solid black;
+  text-align: center;
+  transition: 1s;
+}
+.veri-button {
+  width: 100px;
+  height: 50px;
+  margin: 10px;
+}
+#veriCont {
+  width: 100%;
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+* {
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+#loading-screen {
+  width: 100%;
+  height: 130vh;
+  background-color: orange;
+  z-index: 10000;
+  transition: 1s;
+}
+.wrapper {
+  min-height: 100%;
+  min-width: 100%;
+  height: 100vh;
+  z-index: 1000;
+
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-image: url("images/static-image.gif");
+  background-position: center;
+  background-size: cover;
+}
+
+#main {
+  position: absolute;
+  top: 0;
+}
+
+@media screen and (max-width: 600px) {
+  #beer-cards {
+    grid-template-columns: 1fr;
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+  }
+  .beer-card {
+    width: 100%;
+  }
+  #navbar img {
+    width: 100%;
+  }
+  #links {
+    display: flex;
+    margin-top: -10px;
+    align-self: center;
+  }
+  #carouselExampleControls img {
+    height: 100%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  #navbar img {
+    width: 25%;
+  }
+}
