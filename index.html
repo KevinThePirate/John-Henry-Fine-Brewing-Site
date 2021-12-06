@@ -259,9 +259,11 @@
         }, 3000);
         setTimeout(() => {
           loadingScreenId.style.display = "none";
-        }, 4000);
+        }, 3000);
       }
       function startUp() {
+        document.getElementById("wrapper").style.opacity = 1;
+        document.getElementById("main").style.opacity = 0;
         checkIfVeri();
         loadingScreen();
       }
